@@ -14,6 +14,7 @@ public class BetController {
 	@RequestMapping("/get")
 	public @ResponseBody Bet GetBet() {
 		Bet bet = new Bet();
+		bet.Currency = "DKK";
 		return bet;
 	}
 }
